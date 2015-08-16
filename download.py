@@ -18,6 +18,6 @@ def download(url):
     print("Download over.")
 
 if __name__ == '__main__':
-    url = input('Enter a URL:')
+    url = input('Enter a URL:')                         # Ask the user to input URL
     download(url)
 
