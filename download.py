@@ -14,10 +14,10 @@ def download(url):
         return
     filename = url.split('/')[-1]
     with open(filename, 'wb') as fobj:
-        fobj.write(req.content)
+        fobj.write(req.content)                                 # Write the contents from the upstream to a file
     print("Download over.")
 
 if __name__ == '__main__':
-    url = input('Enter a URL:')                         # Ask the user to input URL
+    url = input('Enter a URL:')                         
     download(url)
 
